@@ -1,0 +1,325 @@
+@font-face {
+    font-family: 'LTRegular';
+    src: url(assets/Fonts/LTSaeada-Regular.otf);
+}
+
+
+
+
+
+/*Site main conf*/
+body {
+    margin: 0;
+    background: linear-gradient(to left top, #1b203e, #535a8b);
+    background-attachment: fixed; /*edit*/
+    font-family: 'LTRegular', sans-serif;
+}
+
+
+h1{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+p{
+    color: white;
+    text-align: center;
+}
+
+
+/*Scroll bar Style*/
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+::-webkit-scrollbar-track {
+    border: 3px solid #917FB3;
+    border-radius: 10px;
+}
+    
+::-webkit-scrollbar-thumb {
+    background: #917FB3;  
+    border-radius: 10px;
+}
+    
+::-webkit-scrollbar-thumb:hover {
+    background: #4d4261;  
+}
+
+
+
+/* add black background */
+.topnavbar {
+    position: fixed;
+    background-color: none;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+    height: 80;
+    display: flex;
+    justify-content: center;
+    transition: ease-in-out 0.2s;
+}
+
+/* edit hyperlinks */
+.topnavbar a {
+    color: #F2F2F2; 
+    text-align: center;
+    position: relative;
+    padding: 9px 16px;
+    text-decoration: none; /* remove underline */
+    font-size: 30px;
+}
+
+/*show background when scrolled down*/
+.navbody-top {
+    transition: ease-in-out 0.2s;
+    background-color: #333;
+}
+
+/* add colour to hovered link */
+.topnavbar a:hover{
+    background-color: #801a86;
+    color: white;
+}
+
+/*create line under text*/
+.topnavbar a::after {
+    float: center;
+    content: '';
+    height: 4px;
+    width: 0%;
+    background: #917FB3;
+    display: block;
+    opacity: 1;
+    transition: all 0.2s; 
+    pointer-events: none; /*ignore mouse events*/
+}
+
+/*show line on hover*/
+.topnavbar a:hover:after {
+    opacity: 1;
+    width: 100%;
+}
+
+.active {
+    background-color: #600065;
+    color: white;
+}
+
+/*create space in the site*/
+.spacer {
+    position: relative;
+    height: 80px;
+    width: max-content;
+}
+
+/*style for button*/
+button.topic {
+    background-color: #917FB3; 
+    border: none;
+    position: relative;
+    border-radius: 20px;
+    color: white;
+    padding: 30px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px;
+    border: 0px solid #04AA6D;
+    transition-duration: 0.2s;
+}
+
+button.topic::after {
+    content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  background: transparent;
+  border-radius: 30px;
+  border: 5px solid #BFBFBF;
+  z-index: -1;
+}
+
+
+button.topic img {
+    filter: brightness(0%);
+}
+
+/*hover effect for button*/
+button.topic:hover {
+    background-color: transparent; 
+    cursor: pointer;
+  }
+
+
+button.topic:hover span {
+    color: white;
+}
+
+button.topic:hover img {
+    filter: brightness(100%);
+}
+/*align buttons to center*/
+.topics {
+    text-align: center;
+}
+
+/*set position of the image in the topic button*/
+.topic img {
+    display: block;
+    margin: 0 auto;
+}
+
+/*set position and colour of text of the topic button*/
+.topic span {
+    margin-top: auto;
+    color: black;
+}
+
+
+/* set the countdown container */
+.countdown-container {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: #E5BEEC;
+    border-top-left-radius: 30px;
+    overflow: hidden;
+    width: 20%;
+    height: 20%;
+    
+}
+
+/*set the position of the timers inside of this*/
+.timer-box {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    font-size: 15px;
+    text-align: center;
+}
+/*paragraphs in the countdown value*/
+.countdown-value p {
+    color: black;
+}
+.countdown-value h2 {
+    color: black;
+    font-size: 20px;
+}
+
+/*time until exam text*/
+.countdown-container h1 {
+    color: black;
+    position: relative;
+    height: 20px;
+    font-size: 30px;
+    text-decoration: underline solid #917FB3 5px;
+    text-underline-offset: 15px;
+}
+
+/*Background triangles*/
+.triangle-1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(229, 190, 236, 0.4);
+    transform: rotate(120deg);
+    translate: -700px;
+    overflow: hidden;
+    width: 100%;
+    height: 70%;
+}
+.triangle-2 {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(229, 190, 236, 0.4);
+    transform: rotate(-130deg);
+    translate: -900px;
+    overflow: hidden;
+    width: 100%;
+    height: 70%;
+}
+.triangle-3 {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: rgb(229, 190, 236, 0.4);
+    transform: rotate(45deg) translate(450px, 18px);
+    overflow: hidden;
+    width: 20%;
+    height: 1500px;
+}
+
+/*Section box to lead you to different section of pages*/
+.Sections-Box {
+    position: fixed;
+    top: 150px;
+    left: 50px;
+    background-color: #E5BEEC;
+    border-radius: 30px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 20%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.Sections-Box span {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    width: 400px;
+    height: max-content;
+    background-color: #917FB3;
+    
+}
+
+.Sections-Box a {
+    position: relative;
+    background-color: #917FB3;
+    border-radius: 15px;
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    justify-content: center;
+    height: fit-content;
+    width: 250px;
+    
+}
+
+.Sections-Box a::after {
+    content: '';
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  right: -8px;
+  bottom: -8px;
+  background: transparent;
+  border-radius: 30px;
+  border: 4px solid #2A2F4F;
+  z-index: -1;
+}
+
+.Sections-Box a:hover {
+    background-color: transparent;
+    color: black;
+   
+}
+
