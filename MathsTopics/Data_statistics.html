@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Data and descriptive statistics | Topic | Ryan</title>
+
+    <script
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+    ></script>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      rel="icon"
+      href="https://www.svgrepo.com/show/449866/plus-square.svg"
+    />
+
+    <link rel="stylesheet" type="text/css" href="../stylesheet.css" />
+  </head>
+  <body>
+    <script src="../script.js"></script>
+
+    <!--spacer-->
+    <div class="spacer"></div>
+
+    <!--site content-->
+
+    <div class="Site-Content">
+      <h1>Data and descriptive statistics</h1>
+      <h2>Mean</h2>
+      <div id="mean" class="anchor"></div>
+      <p>
+        The mean is found by adding all the values and dividing with the <br />
+        total amount of values
+      </p>
+      <p>$$3,8,5,3,4,9,0,3,2,10=\frac {3+8+5+3+4+9+0+3+2+10} {10}=4.7$$</p>
+
+      <h2>Median</h2>
+      <div id="median" class="anchor"></div>
+      <p>
+        The median is found by rearranging all the values in order <br />
+        and finding the middle value
+      </p>
+      <p>$$0,9,5,7,4$$</p>
+      <p>$$=0,4,5,7,9=5$$</p>
+      <p>
+        But when there is no middle value you need to add the values next <br />
+        to the middle point and divide by 2
+      </p>
+      <p>$$0,2,3,3,3,*,4,5,8,9,10 = \frac {3+4} {2}=3.5$$</p>
+
+      <h2>Mode</h2>
+      <div id="mode" class="anchor"></div>
+
+      <p>mode is the most common value</p>
+      <p>$$3,8,5,3,4,9,0,3,2,10 = 3$$</p>
+
+      <h2>Range</h2>
+      <div id="range" class="anchor"></div>
+
+      <p>Range is Subtracting the largest value with the smallest value</p>
+      <p>$$3,8,5,3,4,9,0,3,2,10 = 10-0=10$$</p>
+
+      <h2>Upper and Lower Quartile</h2>
+      <div id="quartile" class="anchor"></div>
+
+      <p>
+        Finding the Quartiles can be done by first finding the middle Quartile
+        <br />
+        (also known as the median) and then finding the middle of the split
+        values
+      </p>
+      <p>$$0,2,3,3,3,*,4,5,8,9,10$$</p>
+      <p>lower Quartile: $$0,2,3,3,3 = 3$$</p>
+      <p>upper Quartile: $$4,5,8,9,10 = 8$$</p>
+
+      <h2>Standard Deviation</h2>
+      <div id="std" class="anchor"></div>
+
+      <p>To calculate the sample Standard Deviation this formula can be done</p>
+      <p>$$\sqrt{ \frac {\sum(x-\bar{x})^{2}} {n-1} }$$</p>
+      <p>Firstly, the mean needs to be found</p>
+      <p>$$\bar{x}=\frac{sum}{n}=\frac{81+93+98+89+88}{5}=\frac{450}{5}=90$$</p>
+      <p>Then subtract each value and square them</p>
+      <p>
+        $$\sqrt{\frac
+        {(81-90)^{2}+(93-90)^{2}+(98-90)^{2}+(89-90)^{2}+(88-90)^{2}} {5-1}}$$
+      </p>
+      <p>tip: if you add all the subtracted values the answer will be 0</p>
+      <p>$$(-8)+(3)+(8)+(-1)+(-2)=0$$</p>
+      <p>
+        $$\sqrt{ \frac {(-8)^{2}+(3)^{2}+(8)^{2}+(-1)^{2}+(-2)^{2}} {4}
+        }=5.958$$
+      </p>
+
+      <div class="center">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/A1mQ9kD-i9I?si=icFu6LTE_3eZPhwI"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+
+    <!--spacer-->
+    <div class="spacer"></div>
+
+    <!--navbar-->
+    <div class="topnavbar">
+      <a href="../index.html" title="Go to the home">Home</a>
+      <a href="../referencespage.html">References</a>
+    </div>
+
+    <div class="Section">
+      <h2>Sections</h2>
+      <h3>Averages</h3>
+      <a href="#mean">Mean</a>
+      <a href="#median">Median</a>
+      <a href="#mode">Mode</a>
+      <a href="#range">Range</a>
+      <a href="#quartile">Quartile</a>
+      <a href="#std">Standard Deviation</a>
+    </div>
+  </body>
+</html>

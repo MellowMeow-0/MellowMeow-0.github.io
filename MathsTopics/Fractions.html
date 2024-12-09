@@ -26,14 +26,77 @@
     <div class="spacer"></div>
 
     <!--site content-->
-    <h1>Fractions</h1>
-    <h2>Adding and Subtracting</h2>
-    <p>
-      When Adding and Subtracting fractions they have to have the same
-      denominator
-    </p>
-    <p>$$\frac{5}{10}+\frac{2}{10}=\frac{3}{10}$$</p>
-    <p>But when they don't</p>
+
+    <div class="Site-Content">
+      <h1>Fractions</h1>
+      <h2>Adding and Subtracting</h2>
+      <div id="Add-Sub" class="anchor"></div>
+      <p>
+        When Adding and Subtracting fractions they have to have the same
+        denominator
+      </p>
+      <p>
+        $$\frac{5}{10}-\frac{2}{10}=\frac{3}{10}$$
+        <br />$$\frac{5}{10}+\frac{2}{10}=\frac{7}{10}$$
+      </p>
+      <p>
+        But when they don't have the same denominators <br />
+        you multiply the bottom denominators and multiply <br />
+        the numerator of the first fraction with the denominator of the second
+        <br />
+        then add it with the vice versa
+      </p>
+
+      <p>
+        $$\frac{a}{b}+\frac{c}{d}=\frac{a*d+b*c}{bd}$$<br />
+        $$\frac{1}{2}+\frac{1}{4}=\frac{6}{8}=\frac{3}{4}$$<br />
+        $$\frac{1}{2}-\frac{1}{4}=\frac{2}{8}=\frac{1}{4}$$
+      </p>
+      <h2>Multiplying</h2>
+      <div id="multiply" class="anchor"></div>
+      <p>
+        Multiplying is much easier since you just need to <br />
+        multiple the numerators and denominators and it does not matter
+        <br />
+        if they have different numbers
+      </p>
+      <p>$$\frac{4}{2}*\frac{1}{4}=\frac{4}{8}=\frac{1}{2}$$</p>
+      <h2>Dividing</h2>
+      <div id="divide" class="anchor"></div>
+
+      <p>
+        For Dividing you have to flip the second fraction and then multiply
+        <br />
+        the first fraction withe the flipped one
+      </p>
+      <p>$$\frac{2}{5}*\frac{3}{2}=\frac{2*2}{5*3}=\frac{4}{15}$$</p>
+
+      <div class="center">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/GvLIEiqxS6s?si=TyU1bELGQvYtubZC"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <h2>Questions</h2>
+      <div class="container" id="container">
+        <div class="card" id="container" onclick="flip_card()">
+          <div class="front" id="question">$$\frac{1}{2}+\frac{1}{2}$$</div>
+          <div class="back" id="answer">$$\frac{2}{2}=1$$</div>
+        </div>
+        <div class="generate" onclick="generate_frac()">
+          <img
+            src="https://www.svgrepo.com/show/107392/loading-arrow.svg"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
 
     <!--spacer-->
     <div class="spacer"></div>
@@ -44,19 +107,12 @@
       <a href="../referencespage.html">References</a>
     </div>
 
-    <!--buttons to send to different sections of page-->
-    <div class="Sections-Box">
-      <span>Sections</span>
-      <a href="">Bottom</a>
-      <a href="">button</a>
-      <a href="">button2</a>
-      <a href="">button3</a>
-      <a href="">button4</a>
-      <a href="">Bottom</a>
-      <a href="">button</a>
-      <a href="">button2</a>
-      <a href="">button3</a>
-      <a href="">button4</a>
+    <div class="Section">
+      <h2>Sections</h2>
+      <h3>Combining Fractions</h3>
+      <a href="#Add-Sub">Addition And Subtraction</a>
+      <a href="#multiply">Multiplying</a>
+      <a href="#divide">Dividing</a>
     </div>
   </body>
 </html>
