@@ -49,6 +49,14 @@ p{
     text-align: center;
 }
 
+a {
+    color: #aa79ff;
+}
+
+a:visited {
+    color: #e7d9ff;
+}
+
 .center {
     text-align: center;
 }
@@ -399,3 +407,10 @@ button.topic:hover img {
     cursor: pointer;
 }
 
+.blt-point{
+    color: white;
+    font-size: 20px;
+}
+.ref-text {
+    font-size: 10px;
+}
