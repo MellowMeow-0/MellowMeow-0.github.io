@@ -183,3 +183,17 @@ function flip_card() {
         card.classList.remove("clicked");
     }
 }
+
+
+function open_section() {
+    console.log('section opened')
+    const card = document.getElementById('Section');
+    const class_check = card.classList.contains('sec-open');
+    
+    // Add class if the element does not have the clicked class
+    if (!class_check) {
+        card.classList.add("sec-open");
+    } else {
+        card.classList.remove("sec-open");
+    }
+}
