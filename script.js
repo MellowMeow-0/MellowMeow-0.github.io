@@ -188,11 +188,12 @@ function flip_card() {
 function open_section() {
     console.log('section opened')
     const card = document.getElementById('Section');
-    const class_check = card.classList.contains('sec-open');
+    const c_check = card.classList.contains('sec-open');
     
     // Add class if the element does not have the clicked class
-    if (!class_check) {
+    if (!card.classList.contains('sec-open')) {
         card.classList.add("sec-open");
+        
     } else {
         card.classList.remove("sec-open");
     }
