@@ -198,3 +198,19 @@ function open_section() {
         card.classList.remove("sec-open");
     }
 }
+
+// Dropdown button functionality
+
+ function DropTimer() {
+    const dropBtn = document.getElementById("dorpDownButton");
+    const counter = document.getElementById("countdown-container")
+    const drop_check = counter.classList.contains('dropped')
+
+    if (!drop_check) {
+        counter.classList.add("dropped");
+        dropBtn.innerHTML = '↑';
+    } else {
+        counter.classList.remove("dropped");
+        dropBtn.innerHTML = '↓';
+    }
+ };
